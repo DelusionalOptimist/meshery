@@ -43,6 +43,7 @@ const (
 )
 
 func main() {
+	fmt.Println("Hello World")
 	if globalTokenForAnonymousResults != "" {
 		models.GlobalTokenForAnonymousResults = globalTokenForAnonymousResults
 	}
