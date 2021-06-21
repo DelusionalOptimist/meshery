@@ -59,6 +59,20 @@ jobs:
           files: ./coverage.txt
           flags: unittests
           fail_ci_if_error: true
+  error:
+    needs: [golangci]
+    name: Error codes utility
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - name: Setup Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ secrets.GO_VERSION }}
+      - name: Run errors utility
+        run: go run github.com/layer5io/meshkit/cmd/errorutil -d . update
   build-backend:
     name: Backend build
     runs-on: ubuntu-latest
