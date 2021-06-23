@@ -1,0 +1,28 @@
+name: Error Reference Publisher
+on:
+  release:
+  types: published
+
+jobs:
+  create_error_reference_pr:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+
+        - name: Setup Go
+          uses: actions/setup-go@v1
+          with:
+           go-version: ${{ secrets.GO_VERSION }}
+
+        - name: Run errorutil
+          run: |
+           go build github.com/layer5io/meshkit/cmd/errorutil
+           ./errorutil -d . update
+
+        - name: Update error reference in docs
+          run: |
+            echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/meshery_errors_export.json
+
+        - name: Create Pull request
+          uses: peter-evans/create-pull-request
