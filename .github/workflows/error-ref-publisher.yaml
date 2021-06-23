@@ -26,3 +26,5 @@ jobs:
 
         - name: Create Pull request
           uses: peter-evans/create-pull-request@v3
+          with:
+            base: master
