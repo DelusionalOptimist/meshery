@@ -25,4 +25,4 @@ jobs:
             echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/meshery_errors_export.json
 
         - name: Create Pull request
-          uses: peter-evans/create-pull-request
+          uses: peter-evans/create-pull-request@v3
