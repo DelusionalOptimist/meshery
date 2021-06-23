@@ -1,7 +1,7 @@
 name: Error Reference Publisher
 on:
   release:
-  types: published
+    types: [published]
 
 jobs:
   create_error_reference_pr:
