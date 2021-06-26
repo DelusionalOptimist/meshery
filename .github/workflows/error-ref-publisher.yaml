@@ -8,6 +8,7 @@ on:
 
 jobs:
   error-ref:
+    name: Error codes utility
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -32,5 +33,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@4
         with:
-          commit_message: [Docs] error reference updated
+          commit_message: "[Docs] error reference updated"
 
