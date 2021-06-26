@@ -21,17 +21,11 @@ jobs:
           go build github.com/layer5io/meshkit/cmd/errorutil
       - name: Meshery-server
         run: |
-          ./errorutil -d . update
+          go run github.com/layer5io/meshkit/cmd/errorutil -d . update --skip-dirs mesheryctl
           echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/meshery-server_errors_export.json
 
-      - name: Mesheryctl
-        run: |
-          cd ./mesheryctl
-          ./errorutil -d . update
-          echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/mesheryctl_errors_export.json
-
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@4
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "[Docs] error reference updated"
+          commit_message: "[Docs] update error reference"
 
