@@ -1,30 +1,36 @@
 name: Error Reference Publisher
 on:
-  release:
-    types: [published]
+  pull_request:
+    branches:
+      - 'master'
+    paths-ignore:
+      - 'docs/**'
 
 jobs:
-  create_error_reference_pr:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
+  error-ref:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ secrets.GO_VERSION }}
+      - name: Error codes utility
+        run: |
+          go build github.com/layer5io/meshkit/cmd/errorutil
+      - name: Meshery-server
+        run: |
+          ./errorutil -d . update
+          echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/meshery-server_errors_export.json
 
-        - name: Setup Go
-          uses: actions/setup-go@v1
-          with:
-           go-version: ${{ secrets.GO_VERSION }}
+      - name: Mesheryctl
+        run: |
+          cd ./mesheryctl
+          ./errorutil -d . update
+          echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/mesheryctl_errors_export.json
 
-        - name: Run errorutil
-          run: |
-           go build github.com/layer5io/meshkit/cmd/errorutil
-           ./errorutil -d . update
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@4
+        with:
+          commit_message: [Docs] error reference updated
 
-        - name: Update error reference in docs
-          run: |
-            echo '{ "errors_export": '$(cat errorutil_errors_export.json)' }' | jq > docs/_data/errorref/meshery_errors_export.json
-
-        - name: Create Pull request
-          uses: peter-evans/create-pull-request@v3
-          with:
-            base: master
