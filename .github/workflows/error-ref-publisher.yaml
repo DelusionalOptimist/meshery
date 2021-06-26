@@ -1,6 +1,7 @@
 name: Error Reference Publisher
 on:
-  pull_request:
+  pull_request_review:
+    types: [closed]
     branches:
       - 'master'
     paths-ignore:
