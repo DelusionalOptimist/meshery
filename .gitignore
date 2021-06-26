@@ -55,5 +55,6 @@ yarn.lock
 # Generated binaries
 **/bin
 *.Identifier
+errorutil
 
 default.profraw

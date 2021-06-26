@@ -1,11 +1,11 @@
 name: Error Reference Publisher
 on:
-  pull_request_review:
-    types: [closed]
+  push:
     branches:
       - 'master'
     paths-ignore:
       - 'docs/**'
+      - 'mesheryctl/**'
 
 jobs:
   error-ref:
