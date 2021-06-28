@@ -30,7 +30,7 @@ jobs:
         with:
           go-version: ${{ secrets.GO_VERSION }}
       - name: Run errors utility
-        run: go run github.com/layer5io/meshkit/cmd/errorutil -d . update
+        run: go run github.com/layer5io/meshkit/cmd/errorutil -d . update | grep "WARN"
   golangci:
     name: golangci-lint
     runs-on: ubuntu-latest
