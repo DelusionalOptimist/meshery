@@ -209,6 +209,8 @@ func main() {
 
 		cp.Initialize()
 
+		fmt.Println("Hello world")
+
 		cp.SyncPreferences()
 		defer cp.StopSyncPreferences()
 		provs[cp.Name()] = cp
