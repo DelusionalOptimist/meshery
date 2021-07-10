@@ -3,8 +3,8 @@
   "max_code": 3000,
   "duplicate_codes": {},
   "duplicate_names": [
-    "ErrNilClientCode",
     "ErrGrafanaBoardsCode",
+    "ErrNilClientCode",
     "ErrNoMeshSyncCode",
     "ErrMesheryClientCode",
     "ErrCreateDataCode"
