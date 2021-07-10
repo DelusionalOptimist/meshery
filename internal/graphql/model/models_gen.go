@@ -15,7 +15,7 @@ type AddonList struct {
 }
 
 type AddonStatusInput struct {
-	Selector     *MeshType `json:"selector"`
+	Selector     *MeshType 
 	TargetStatus Status    `json:"targetStatus"`
 }
 
