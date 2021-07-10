@@ -43,6 +43,7 @@ const (
 )
 
 func main() {
+	
 	if globalTokenForAnonymousResults != "" {
 		models.GlobalTokenForAnonymousResults = globalTokenForAnonymousResults
 	}
@@ -63,12 +64,7 @@ func main() {
 
 	ctx := context.Background()
 
-	viper.AutomaticEnv()
-
-	viper.SetDefault("PORT", 8080)
-	viper.SetDefault("ADAPTER_URLS", "")
-	viper.SetDefault("BUILD", version)
-	viper.SetDefault("OS", "meshery")
+	 "meshery")
 	viper.SetDefault("COMMITSHA", commitsha)
 	viper.SetDefault("RELEASE_CHANNEL", releasechannel)
 
