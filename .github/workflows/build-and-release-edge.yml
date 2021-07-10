@@ -1,5 +1,4 @@
 name: Meshery Build and Releaser (edge)
-if: github.repository == 'meshery/meshery'
 on:
   push:
     branches:
@@ -8,6 +7,7 @@ on:
 jobs:
   build:
     name: Docker build and push
+    if: github.repository == 'meshery/meshery'
     env:
       RELEASE_CHANNEL: "edge"
     runs-on: ubuntu-latest
