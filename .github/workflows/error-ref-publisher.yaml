@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.RELEASE_DRAFTER_PAT }}
+          token: ${{ secrets.RELEASEDRAFTER_PAT }}
 
       - name: Setup Go
         uses: actions/setup-go@v1
