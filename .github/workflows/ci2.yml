@@ -29,10 +29,10 @@ jobs:
           badCodes=$(git diff | sed -n 's/^+[^+]Err.*Code\s*=\s*"\([0-9]*\)"/\1/p' | wc -l)
           if [[ $badCodes -eq 0 ]]
           then
-            echo "Tests passed. All error codes are strings"
+            echo "Test passed. All error codes are alphabetic strings"
             exit 0
           else
-            echo "Tests failed. Integer error codes present"
-            printf "Please create error codes in this format\nErrSomeCode = "replace_me""
+            echo "Test failed. $badCodes integer error codes present"
+            echo "Please follow https://docs.meshery.io/project/contributing-error"
             exit 1
           fi
