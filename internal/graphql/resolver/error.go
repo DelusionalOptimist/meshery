@@ -24,7 +24,6 @@ const (
 	ErrSomeOtherOtherCode			= "1235"
 	ErrSomeOtherOtherCode			= "1235"
 	ErrSomeOtherOtherCode			= "1236"
-	ErrSomeOtherOtherCode			= "1236"
 )
 
 var (
