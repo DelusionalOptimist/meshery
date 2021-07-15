@@ -537,6 +537,38 @@
       "path": "internal/graphql/resolver/error.go"
     },
     {
+      "name": "ErrSomeSomeCode",
+      "old_code": "test_me",
+      "code": "2048",
+      "code_is_literal": true,
+      "code_is_int": false,
+      "path": "internal/graphql/resolver/error.go"
+    },
+    {
+      "name": "ErrSomeSomeSomeCode",
+      "old_code": "test_me",
+      "code": "2049",
+      "code_is_literal": true,
+      "code_is_int": false,
+      "path": "internal/graphql/resolver/error.go"
+    },
+    {
+      "name": "ErrStupidSomeSomeCode",
+      "old_code": "test_me",
+      "code": "2050",
+      "code_is_literal": true,
+      "code_is_int": false,
+      "path": "internal/graphql/resolver/error.go"
+    },
+    {
+      "name": "ErrStupidestSomeCode",
+      "old_code": "test_me",
+      "code": "2051",
+      "code_is_literal": true,
+      "code_is_int": false,
+      "path": "internal/graphql/resolver/error.go"
+    },
+    {
       "name": "ErrGrafanaClientCode",
       "old_code": "3000",
       "code": "3000",
@@ -1224,6 +1256,40 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "models/error.go"
+      }
+    ],
+    "test_me": [
+      {
+        "name": "ErrSomeSomeCode",
+        "old_code": "test_me",
+        "code": "2048",
+        "code_is_literal": true,
+        "code_is_int": false,
+        "path": "internal/graphql/resolver/error.go"
+      },
+      {
+        "name": "ErrSomeSomeSomeCode",
+        "old_code": "test_me",
+        "code": "2049",
+        "code_is_literal": true,
+        "code_is_int": false,
+        "path": "internal/graphql/resolver/error.go"
+      },
+      {
+        "name": "ErrStupidSomeSomeCode",
+        "old_code": "test_me",
+        "code": "2050",
+        "code_is_literal": true,
+        "code_is_int": false,
+        "path": "internal/graphql/resolver/error.go"
+      },
+      {
+        "name": "ErrStupidestSomeCode",
+        "old_code": "test_me",
+        "code": "2051",
+        "code_is_literal": true,
+        "code_is_int": false,
+        "path": "internal/graphql/resolver/error.go"
       }
     ]
   },

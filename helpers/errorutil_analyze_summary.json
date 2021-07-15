@@ -1,14 +1,21 @@
 {
   "min_code": 1000,
   "max_code": 3000,
-  "duplicate_codes": {},
+  "duplicate_codes": {
+    "test_me": [
+      "ErrSomeSomeCode",
+      "ErrSomeSomeSomeCode",
+      "ErrStupidSomeSomeCode",
+      "ErrStupidestSomeCode"
+    ]
+  },
   "duplicate_names": [
-    "ErrNoMeshSyncCode",
-    "ErrCreateDataCode",
-    "ErrLoadTestCode",
-    "ErrMesheryClientCode",
     "ErrGrafanaBoardsCode",
-    "ErrNilClientCode"
+    "ErrCreateDataCode",
+    "ErrNoMeshSyncCode",
+    "ErrLoadTestCode",
+    "ErrNilClientCode",
+    "ErrMesheryClientCode"
   ],
   "call_expr_codes": [],
   "int_codes": [

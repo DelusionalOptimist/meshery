@@ -18,10 +18,10 @@ const (
 	ErrPublishBrokerCode            = "1010"
 	ErrNoMeshSyncCode               = "1011"
 	ErrNoExternalEndpointCode       = "1012"
-	ErrSomeSomeCode                 = "test_me"
-	ErrSomeSomeSomeCode             = "test_me"
-	ErrStupidSomeSomeCode             = "test_me"
-	ErrStupidestSomeCode             = "test_me"
+	ErrSomeSomeCode                 = "2048"
+	ErrSomeSomeSomeCode             = "2049"
+	ErrStupidSomeSomeCode           = "2050"
+	ErrStupidestSomeCode            = "2051"
 )
 
 var (
