@@ -21,6 +21,7 @@ const (
 	ErrSomeSomeCode                 = "test_me"
 	ErrSomeSomeSomeCode             = "test_me"
 	ErrStupidSomeSomeCode             = "test_me"
+	ErrStupidestSomeCode             = "test_me"
 )
 
 var (
