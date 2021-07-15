@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
       - name: Error codes are alphabetic strings
         run: |
           badCodes=$(git diff HEAD~1 | sed -n 's/^+[^+]Err.*Code\s*=\s*"\([0-9]*\)"/\1/p' | wc -l)
