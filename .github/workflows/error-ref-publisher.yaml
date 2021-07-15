@@ -41,7 +41,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           add_options: '--force'
-          file_pattern: helpers/ **/*.go
+          file_pattern: helpers/ **.go
           commit_user_name: l5io
           commit_user_email: ci@layer5.io
           commit_author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
