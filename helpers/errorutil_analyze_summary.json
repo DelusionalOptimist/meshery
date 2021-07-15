@@ -2,20 +2,30 @@
   "min_code": 1000,
   "max_code": 3000,
   "duplicate_codes": {
-    "test_me": [
-      "ErrSomeSomeCode",
-      "ErrSomeSomeSomeCode",
-      "ErrStupidSomeSomeCode",
+    "2048": [
+      "ErrConversionCode",
+      "ErrSomeSomeCode"
+    ],
+    "2049": [
+      "ErrParseDurationCode",
+      "ErrSomeSomeSomeCode"
+    ],
+    "2050": [
+      "ErrLoadTestCode",
+      "ErrStupidSomeSomeCode"
+    ],
+    "2051": [
+      "ErrFetchKubernetesCode",
       "ErrStupidestSomeCode"
     ]
   },
   "duplicate_names": [
-    "ErrGrafanaBoardsCode",
-    "ErrCreateDataCode",
     "ErrNoMeshSyncCode",
+    "ErrMesheryClientCode",
     "ErrLoadTestCode",
+    "ErrGrafanaBoardsCode",
     "ErrNilClientCode",
-    "ErrMesheryClientCode"
+    "ErrCreateDataCode"
   ],
   "call_expr_codes": [],
   "int_codes": [

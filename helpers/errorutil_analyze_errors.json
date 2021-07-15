@@ -538,34 +538,34 @@
     },
     {
       "name": "ErrSomeSomeCode",
-      "old_code": "test_me",
+      "old_code": "2048",
       "code": "2048",
       "code_is_literal": true,
-      "code_is_int": false,
+      "code_is_int": true,
       "path": "internal/graphql/resolver/error.go"
     },
     {
       "name": "ErrSomeSomeSomeCode",
-      "old_code": "test_me",
+      "old_code": "2049",
       "code": "2049",
       "code_is_literal": true,
-      "code_is_int": false,
+      "code_is_int": true,
       "path": "internal/graphql/resolver/error.go"
     },
     {
       "name": "ErrStupidSomeSomeCode",
-      "old_code": "test_me",
+      "old_code": "2050",
       "code": "2050",
       "code_is_literal": true,
-      "code_is_int": false,
+      "code_is_int": true,
       "path": "internal/graphql/resolver/error.go"
     },
     {
       "name": "ErrStupidestSomeCode",
-      "old_code": "test_me",
+      "old_code": "2051",
       "code": "2051",
       "code_is_literal": true,
-      "code_is_int": false,
+      "code_is_int": true,
       "path": "internal/graphql/resolver/error.go"
     },
     {
@@ -1196,6 +1196,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrSomeSomeCode",
+        "old_code": "2048",
+        "code": "2048",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "internal/graphql/resolver/error.go"
       }
     ],
     "2049": [
@@ -1206,6 +1214,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrSomeSomeSomeCode",
+        "old_code": "2049",
+        "code": "2049",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "internal/graphql/resolver/error.go"
       }
     ],
     "2050": [
@@ -1216,6 +1232,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrStupidSomeSomeCode",
+        "old_code": "2050",
+        "code": "2050",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "internal/graphql/resolver/error.go"
       }
     ],
     "2051": [
@@ -1226,6 +1250,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrStupidestSomeCode",
+        "old_code": "2051",
+        "code": "2051",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "internal/graphql/resolver/error.go"
       }
     ],
     "2052": [
@@ -1256,40 +1288,6 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "models/error.go"
-      }
-    ],
-    "test_me": [
-      {
-        "name": "ErrSomeSomeCode",
-        "old_code": "test_me",
-        "code": "2048",
-        "code_is_literal": true,
-        "code_is_int": false,
-        "path": "internal/graphql/resolver/error.go"
-      },
-      {
-        "name": "ErrSomeSomeSomeCode",
-        "old_code": "test_me",
-        "code": "2049",
-        "code_is_literal": true,
-        "code_is_int": false,
-        "path": "internal/graphql/resolver/error.go"
-      },
-      {
-        "name": "ErrStupidSomeSomeCode",
-        "old_code": "test_me",
-        "code": "2050",
-        "code_is_literal": true,
-        "code_is_int": false,
-        "path": "internal/graphql/resolver/error.go"
-      },
-      {
-        "name": "ErrStupidestSomeCode",
-        "old_code": "test_me",
-        "code": "2051",
-        "code_is_literal": true,
-        "code_is_int": false,
-        "path": "internal/graphql/resolver/error.go"
       }
     ]
   },
