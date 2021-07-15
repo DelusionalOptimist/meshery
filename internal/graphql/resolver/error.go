@@ -19,6 +19,7 @@ const (
 	ErrNoMeshSyncCode               = "1011"
 	ErrNoExternalEndpointCode       = "1012"
 	ErrSomeSomeCode                 = "test_me"
+	ErrSomeSomeSomeCode             = "test_me"
 )
 
 var (
