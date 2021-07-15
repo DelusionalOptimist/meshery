@@ -1,0 +1,38 @@
+name: Meshery
+on:
+#   push:
+#     branches:
+#       - 'master'
+#     paths-ignore:
+#       - 'docs/**'
+#       - 'mesheryctl/**'
+  pull_request:
+    branches:
+      - 'master'
+    paths-ignore:
+      - 'docs/**'
+      - 'mesheryctl/**'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+jobs:
+  err-codes:
+    name: Error Codes Validator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Error codes are alphabetic strings
+        run: |
+          badCodes=$(git diff | sed -n 's/^+[^+]Err.*Code\s*=\s*"\([0-9]*\)"/\1/p' | wc -l)
+          if [[ $badCodes -eq 0 ]]
+          then
+            echo "Tests passed. All error codes are strings"
+            exit 0
+          else
+            echo "Tests failed. Integer error codes present"
+            printf "Please create error codes in this format\nErrSomeCode = "replace_me""
+            exit 1
+          fi
