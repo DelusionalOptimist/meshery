@@ -21,6 +21,7 @@ const (
 	ErrSomeNewCode = "replace_me"
 	ErrSomeOtherCode				= "another_string"
 	ErrSomeOtherOtherCode			= "1234"
+	ErrSomeOtherOtherCode			= "1235"
 )
 
 var (
