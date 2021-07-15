@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Error codes are alphabetic strings
         run: |
-          badCodes=$(git diff HEAD^ | sed -n 's/^+[^+]Err.*Code\s*=\s*"\([0-9]*\)"/\1/p' | wc -l)
+          badCodes=$(git diff HEAD~1 | sed -n 's/^+[^+]Err.*Code\s*=\s*"\([0-9]*\)"/\1/p' | wc -l)
           if [[ $badCodes -eq 0 ]]
           then
             echo "Test passed. All error codes are alphabetic strings"
