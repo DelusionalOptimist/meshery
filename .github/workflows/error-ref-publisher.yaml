@@ -26,14 +26,14 @@ jobs:
       - name: Run Utility For Meshery Server
         run: |
           ~/errorutil update -d . -i ./helpers -o ./helpers --skip-dirs mesheryctl
-          echo '{ "errors_export": "" }' | jq --slurpfile export ./errorutil_errors_export.json '.errors_export = $export[0]' > ./docs/_data/errorref/meshery-server_errors_export.json
+          echo '{ "errors_export": "" }' | jq --slurpfile export ./helpers/errorutil_errors_export.json '.errors_export = $export[0]' > ./docs/_data/errorref/meshery-server_errors_export.json
 
       - name: Run Utility For Mesheryctl
         run: |
           cd ./mesheryctl
         # comment out later
         # ~/errorutil update -d . -i ./helpers -o ./helpers --skip-dirs mesheryctl
-        # echo '{ "errors_export": "" }' | jq --slurpfile export ./errorutil_errors_export.json '.errors_export = $export[0]' > ../docs/_data/errorref/mesheryctl_errors_export.json
+        # echo '{ "errors_export": "" }' | jq --slurpfile export ./helpers/errorutil_errors_export.json '.errors_export = $export[0]' > ../docs/_data/errorref/mesheryctl_errors_export.json
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
