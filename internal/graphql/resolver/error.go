@@ -20,6 +20,7 @@ const (
 	ErrNoExternalEndpointCode       = "1012"
 	ErrSomeSomeCode                 = "test_me"
 	ErrSomeSomeSomeCode             = "test_me"
+	ErrStupidSomeSomeCode             = "test_me"
 )
 
 var (
