@@ -2,7 +2,7 @@ name: Meshkit Error Codes Utility Runner
 on:
   push:
     branches:
-      - 'err-codes-ci-tests'
+      - 'err-codes-ci-tests2'
     paths:
       - '**.go'
 
@@ -15,7 +15,7 @@ jobs:
         with:
           #token: ${{ secrets.GH_ACCESS_TOKEN }}
           token: ${{ secrets.RELEASEDRAFTER_PAT}}
-          ref: 'err-codes-ci-tests'
+          ref: 'err-codes-ci-tests2'
 
       - name: Setup Go
         uses: actions/setup-go@v1
@@ -24,7 +24,6 @@ jobs:
 
       - name: Build Error Utility
         run: |
-          go get github.com/layer5io/meshkit/cmd/errorutil@master
           go build -o ~/errorutil github.com/layer5io/meshkit/cmd/errorutil
 
       - name: Run Utility For Meshery Server
