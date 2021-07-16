@@ -433,6 +433,206 @@
       "path": "handlers/error.go"
     },
     {
+      "name": "ErrErrNewDynamicClientGeneratorCode",
+      "old_code": "2048",
+      "code": "2048",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrInvalidK8SConfigCode",
+      "old_code": "2049",
+      "code": "2049",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrClientConfigCode",
+      "old_code": "2050",
+      "code": "2050",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrFetchKubernetesNodesCode",
+      "old_code": "2051",
+      "code": "2051",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrFetchNodesCode",
+      "old_code": "2052",
+      "code": "2052",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrFetchKubernetesVersionCode",
+      "old_code": "2053",
+      "code": "2053",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrScanKubernetesCode",
+      "old_code": "2054",
+      "code": "2054",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrRetrievePodListCode",
+      "old_code": "2055",
+      "code": "2055",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrDetectServiceForDeploymentImageCode",
+      "old_code": "2056",
+      "code": "2056",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrRetrieveNamespacesListCode",
+      "old_code": "2057",
+      "code": "2057",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrGetNamespaceDeploymentsCode",
+      "old_code": "2058",
+      "code": "2058",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrDetectServiceWithNameCode",
+      "old_code": "2059",
+      "code": "2059",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrGeneratingLoadTestCode",
+      "old_code": "2060",
+      "code": "2060",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrRunningTestCode",
+      "old_code": "2061",
+      "code": "2061",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrConvertingResultToMapCode",
+      "old_code": "2062",
+      "code": "2062",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrUnmarshalCode",
+      "old_code": "2063",
+      "code": "2063",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrGrpcSupportCode",
+      "old_code": "2064",
+      "code": "2064",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrStartingNighthawkServerCode",
+      "old_code": "2065",
+      "code": "2065",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrTransformingDataCode",
+      "old_code": "2066",
+      "code": "2066",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrRunningNighthawkServerCode",
+      "old_code": "2067",
+      "code": "2067",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrAddAndValidateExtraHeaderCode",
+      "old_code": "2068",
+      "code": "2068",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrInClusterConfigCode",
+      "old_code": "2069",
+      "code": "2069",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrNewKubeClientGeneratorCode",
+      "old_code": "2070",
+      "code": "2070",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrRestConfigFromKubeConfigCode",
+      "old_code": "2071",
+      "code": "2071",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
+      "name": "ErrNewKubeClientCode",
+      "old_code": "2072",
+      "code": "2072",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "helpers/error.go"
+    },
+    {
       "name": "ErrInvalidRequestCode",
       "old_code": "1000",
       "code": "1000",
@@ -538,8 +738,448 @@
     },
     {
       "name": "ErrGrafanaClientCode",
-      "old_code": "3000",
-      "code": "3000",
+      "old_code": "2073",
+      "code": "2073",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPageSizeCode",
+      "old_code": "2074",
+      "code": "2074",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPageNumberCode",
+      "old_code": "2075",
+      "code": "2075",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrResultIDCode",
+      "old_code": "2076",
+      "code": "2076",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPerfIDCode",
+      "old_code": "2077",
+      "code": "2077",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrMarshalCode",
+      "old_code": "2078",
+      "code": "2078",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrUnmarshalCode",
+      "old_code": "2079",
+      "code": "2079",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGenerateUUIDCode",
+      "old_code": "2080",
+      "code": "2080",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrLocalProviderSupportCode",
+      "old_code": "2081",
+      "code": "2081",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGrafanaOrgCode",
+      "old_code": "2082",
+      "code": "2082",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGrafanaBoardsCode",
+      "old_code": "2083",
+      "code": "2083",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGrafanaDashboardCode",
+      "old_code": "2084",
+      "code": "2084",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGrafanaDataSourceCode",
+      "old_code": "2085",
+      "code": "2085",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrNilQueryCode",
+      "old_code": "2086",
+      "code": "2086",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGrafanaDataCode",
+      "old_code": "2087",
+      "code": "2087",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrApplicationFileNameCode",
+      "old_code": "2088",
+      "code": "2088",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrFilterFileNameCode",
+      "old_code": "2089",
+      "code": "2089",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPatternFileNameCode",
+      "old_code": "2090",
+      "code": "2090",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrMakeDirCode",
+      "old_code": "2091",
+      "code": "2091",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrFolderStatCode",
+      "old_code": "2092",
+      "code": "2092",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrUserIDCode",
+      "old_code": "2093",
+      "code": "2093",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBConnectionCode",
+      "old_code": "2094",
+      "code": "2094",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrNilConfigDataCode",
+      "old_code": "2095",
+      "code": "2095",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBOpenCode",
+      "old_code": "2096",
+      "code": "2096",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBRLockCode",
+      "old_code": "2097",
+      "code": "2097",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBLockCode",
+      "old_code": "2098",
+      "code": "2098",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBReadCode",
+      "old_code": "2099",
+      "code": "2099",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBDeleteCode",
+      "old_code": "2100",
+      "code": "2100",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrCopyCode",
+      "old_code": "2101",
+      "code": "2101",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDBPutCode",
+      "old_code": "2102",
+      "code": "2102",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPrometheusGetNodesCode",
+      "old_code": "2103",
+      "code": "2103",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPrometheusLabelSeriesCode",
+      "old_code": "2104",
+      "code": "2104",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPrometheusQueryRangeCode",
+      "old_code": "2105",
+      "code": "2105",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPrometheusStaticBoardCode",
+      "old_code": "2106",
+      "code": "2106",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenRefreshCode",
+      "old_code": "2107",
+      "code": "2107",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrGetTokenCode",
+      "old_code": "2108",
+      "code": "2108",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDataReadCode",
+      "old_code": "2109",
+      "code": "2109",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenDecodeCode",
+      "old_code": "2110",
+      "code": "2110",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrNilJWKsCode",
+      "old_code": "2111",
+      "code": "2111",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrNilKeysCode",
+      "old_code": "2112",
+      "code": "2112",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenExpiredCode",
+      "old_code": "2113",
+      "code": "2113",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenClaimsCode",
+      "old_code": "2114",
+      "code": "2114",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenClientCheckCode",
+      "old_code": "2115",
+      "code": "2115",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrTokenPraseCode",
+      "old_code": "2116",
+      "code": "2116",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrJWKsKeysCode",
+      "old_code": "2117",
+      "code": "2117",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDecodeBase64Code",
+      "old_code": "2118",
+      "code": "2118",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrMarshalPKIXCode",
+      "old_code": "2119",
+      "code": "2119",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrEncodingPEMCode",
+      "old_code": "2120",
+      "code": "2120",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPraseUnverifiedCode",
+      "old_code": "2121",
+      "code": "2121",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrEncodingCode",
+      "old_code": "2122",
+      "code": "2122",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrFetchCode",
+      "old_code": "2123",
+      "code": "2123",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrPostCode",
+      "old_code": "2124",
+      "code": "2124",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrDeleteCode",
+      "old_code": "2125",
+      "code": "2125",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrInvalidCapabilityCode",
+      "old_code": "2126",
+      "code": "2126",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrResultDataCode",
+      "old_code": "2127",
+      "code": "2127",
+      "code_is_literal": true,
+      "code_is_int": true,
+      "path": "models/error.go"
+    },
+    {
+      "name": "ErrUnableToPersistsResultCode",
+      "old_code": "2128",
+      "code": "2128",
       "code_is_literal": true,
       "code_is_int": true,
       "path": "models/error.go"
@@ -1164,6 +1804,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrErrNewDynamicClientGeneratorCode",
+        "old_code": "2048",
+        "code": "2048",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
     "2049": [
@@ -1174,6 +1822,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrInvalidK8SConfigCode",
+        "old_code": "2049",
+        "code": "2049",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
     "2050": [
@@ -1184,6 +1840,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrClientConfigCode",
+        "old_code": "2050",
+        "code": "2050",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
     "2051": [
@@ -1194,6 +1858,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrFetchKubernetesNodesCode",
+        "old_code": "2051",
+        "code": "2051",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
     "2052": [
@@ -1204,6 +1876,14 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrFetchNodesCode",
+        "old_code": "2052",
+        "code": "2052",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
     "2053": [
@@ -1214,13 +1894,761 @@
         "code_is_literal": true,
         "code_is_int": true,
         "path": "handlers/error.go"
+      },
+      {
+        "name": "ErrFetchKubernetesVersionCode",
+        "old_code": "2053",
+        "code": "2053",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
       }
     ],
-    "3000": [
+    "2054": [
+      {
+        "name": "ErrScanKubernetesCode",
+        "old_code": "2054",
+        "code": "2054",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2055": [
+      {
+        "name": "ErrRetrievePodListCode",
+        "old_code": "2055",
+        "code": "2055",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2056": [
+      {
+        "name": "ErrDetectServiceForDeploymentImageCode",
+        "old_code": "2056",
+        "code": "2056",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2057": [
+      {
+        "name": "ErrRetrieveNamespacesListCode",
+        "old_code": "2057",
+        "code": "2057",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2058": [
+      {
+        "name": "ErrGetNamespaceDeploymentsCode",
+        "old_code": "2058",
+        "code": "2058",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2059": [
+      {
+        "name": "ErrDetectServiceWithNameCode",
+        "old_code": "2059",
+        "code": "2059",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2060": [
+      {
+        "name": "ErrGeneratingLoadTestCode",
+        "old_code": "2060",
+        "code": "2060",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2061": [
+      {
+        "name": "ErrRunningTestCode",
+        "old_code": "2061",
+        "code": "2061",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2062": [
+      {
+        "name": "ErrConvertingResultToMapCode",
+        "old_code": "2062",
+        "code": "2062",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2063": [
+      {
+        "name": "ErrUnmarshalCode",
+        "old_code": "2063",
+        "code": "2063",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2064": [
+      {
+        "name": "ErrGrpcSupportCode",
+        "old_code": "2064",
+        "code": "2064",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2065": [
+      {
+        "name": "ErrStartingNighthawkServerCode",
+        "old_code": "2065",
+        "code": "2065",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2066": [
+      {
+        "name": "ErrTransformingDataCode",
+        "old_code": "2066",
+        "code": "2066",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2067": [
+      {
+        "name": "ErrRunningNighthawkServerCode",
+        "old_code": "2067",
+        "code": "2067",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2068": [
+      {
+        "name": "ErrAddAndValidateExtraHeaderCode",
+        "old_code": "2068",
+        "code": "2068",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2069": [
+      {
+        "name": "ErrInClusterConfigCode",
+        "old_code": "2069",
+        "code": "2069",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2070": [
+      {
+        "name": "ErrNewKubeClientGeneratorCode",
+        "old_code": "2070",
+        "code": "2070",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2071": [
+      {
+        "name": "ErrRestConfigFromKubeConfigCode",
+        "old_code": "2071",
+        "code": "2071",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2072": [
+      {
+        "name": "ErrNewKubeClientCode",
+        "old_code": "2072",
+        "code": "2072",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "helpers/error.go"
+      }
+    ],
+    "2073": [
       {
         "name": "ErrGrafanaClientCode",
-        "old_code": "3000",
-        "code": "3000",
+        "old_code": "2073",
+        "code": "2073",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2074": [
+      {
+        "name": "ErrPageSizeCode",
+        "old_code": "2074",
+        "code": "2074",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2075": [
+      {
+        "name": "ErrPageNumberCode",
+        "old_code": "2075",
+        "code": "2075",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2076": [
+      {
+        "name": "ErrResultIDCode",
+        "old_code": "2076",
+        "code": "2076",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2077": [
+      {
+        "name": "ErrPerfIDCode",
+        "old_code": "2077",
+        "code": "2077",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2078": [
+      {
+        "name": "ErrMarshalCode",
+        "old_code": "2078",
+        "code": "2078",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2079": [
+      {
+        "name": "ErrUnmarshalCode",
+        "old_code": "2079",
+        "code": "2079",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2080": [
+      {
+        "name": "ErrGenerateUUIDCode",
+        "old_code": "2080",
+        "code": "2080",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2081": [
+      {
+        "name": "ErrLocalProviderSupportCode",
+        "old_code": "2081",
+        "code": "2081",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2082": [
+      {
+        "name": "ErrGrafanaOrgCode",
+        "old_code": "2082",
+        "code": "2082",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2083": [
+      {
+        "name": "ErrGrafanaBoardsCode",
+        "old_code": "2083",
+        "code": "2083",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2084": [
+      {
+        "name": "ErrGrafanaDashboardCode",
+        "old_code": "2084",
+        "code": "2084",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2085": [
+      {
+        "name": "ErrGrafanaDataSourceCode",
+        "old_code": "2085",
+        "code": "2085",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2086": [
+      {
+        "name": "ErrNilQueryCode",
+        "old_code": "2086",
+        "code": "2086",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2087": [
+      {
+        "name": "ErrGrafanaDataCode",
+        "old_code": "2087",
+        "code": "2087",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2088": [
+      {
+        "name": "ErrApplicationFileNameCode",
+        "old_code": "2088",
+        "code": "2088",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2089": [
+      {
+        "name": "ErrFilterFileNameCode",
+        "old_code": "2089",
+        "code": "2089",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2090": [
+      {
+        "name": "ErrPatternFileNameCode",
+        "old_code": "2090",
+        "code": "2090",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2091": [
+      {
+        "name": "ErrMakeDirCode",
+        "old_code": "2091",
+        "code": "2091",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2092": [
+      {
+        "name": "ErrFolderStatCode",
+        "old_code": "2092",
+        "code": "2092",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2093": [
+      {
+        "name": "ErrUserIDCode",
+        "old_code": "2093",
+        "code": "2093",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2094": [
+      {
+        "name": "ErrDBConnectionCode",
+        "old_code": "2094",
+        "code": "2094",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2095": [
+      {
+        "name": "ErrNilConfigDataCode",
+        "old_code": "2095",
+        "code": "2095",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2096": [
+      {
+        "name": "ErrDBOpenCode",
+        "old_code": "2096",
+        "code": "2096",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2097": [
+      {
+        "name": "ErrDBRLockCode",
+        "old_code": "2097",
+        "code": "2097",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2098": [
+      {
+        "name": "ErrDBLockCode",
+        "old_code": "2098",
+        "code": "2098",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2099": [
+      {
+        "name": "ErrDBReadCode",
+        "old_code": "2099",
+        "code": "2099",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2100": [
+      {
+        "name": "ErrDBDeleteCode",
+        "old_code": "2100",
+        "code": "2100",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2101": [
+      {
+        "name": "ErrCopyCode",
+        "old_code": "2101",
+        "code": "2101",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2102": [
+      {
+        "name": "ErrDBPutCode",
+        "old_code": "2102",
+        "code": "2102",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2103": [
+      {
+        "name": "ErrPrometheusGetNodesCode",
+        "old_code": "2103",
+        "code": "2103",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2104": [
+      {
+        "name": "ErrPrometheusLabelSeriesCode",
+        "old_code": "2104",
+        "code": "2104",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2105": [
+      {
+        "name": "ErrPrometheusQueryRangeCode",
+        "old_code": "2105",
+        "code": "2105",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2106": [
+      {
+        "name": "ErrPrometheusStaticBoardCode",
+        "old_code": "2106",
+        "code": "2106",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2107": [
+      {
+        "name": "ErrTokenRefreshCode",
+        "old_code": "2107",
+        "code": "2107",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2108": [
+      {
+        "name": "ErrGetTokenCode",
+        "old_code": "2108",
+        "code": "2108",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2109": [
+      {
+        "name": "ErrDataReadCode",
+        "old_code": "2109",
+        "code": "2109",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2110": [
+      {
+        "name": "ErrTokenDecodeCode",
+        "old_code": "2110",
+        "code": "2110",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2111": [
+      {
+        "name": "ErrNilJWKsCode",
+        "old_code": "2111",
+        "code": "2111",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2112": [
+      {
+        "name": "ErrNilKeysCode",
+        "old_code": "2112",
+        "code": "2112",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2113": [
+      {
+        "name": "ErrTokenExpiredCode",
+        "old_code": "2113",
+        "code": "2113",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2114": [
+      {
+        "name": "ErrTokenClaimsCode",
+        "old_code": "2114",
+        "code": "2114",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2115": [
+      {
+        "name": "ErrTokenClientCheckCode",
+        "old_code": "2115",
+        "code": "2115",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2116": [
+      {
+        "name": "ErrTokenPraseCode",
+        "old_code": "2116",
+        "code": "2116",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2117": [
+      {
+        "name": "ErrJWKsKeysCode",
+        "old_code": "2117",
+        "code": "2117",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2118": [
+      {
+        "name": "ErrDecodeBase64Code",
+        "old_code": "2118",
+        "code": "2118",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2119": [
+      {
+        "name": "ErrMarshalPKIXCode",
+        "old_code": "2119",
+        "code": "2119",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2120": [
+      {
+        "name": "ErrEncodingPEMCode",
+        "old_code": "2120",
+        "code": "2120",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2121": [
+      {
+        "name": "ErrPraseUnverifiedCode",
+        "old_code": "2121",
+        "code": "2121",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2122": [
+      {
+        "name": "ErrEncodingCode",
+        "old_code": "2122",
+        "code": "2122",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2123": [
+      {
+        "name": "ErrFetchCode",
+        "old_code": "2123",
+        "code": "2123",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2124": [
+      {
+        "name": "ErrPostCode",
+        "old_code": "2124",
+        "code": "2124",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2125": [
+      {
+        "name": "ErrDeleteCode",
+        "old_code": "2125",
+        "code": "2125",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2126": [
+      {
+        "name": "ErrInvalidCapabilityCode",
+        "old_code": "2126",
+        "code": "2126",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2127": [
+      {
+        "name": "ErrResultDataCode",
+        "old_code": "2127",
+        "code": "2127",
+        "code_is_literal": true,
+        "code_is_int": true,
+        "path": "models/error.go"
+      }
+    ],
+    "2128": [
+      {
+        "name": "ErrUnableToPersistsResultCode",
+        "old_code": "2128",
+        "code": "2128",
         "code_is_literal": true,
         "code_is_int": true,
         "path": "models/error.go"
@@ -1239,6 +2667,17 @@
         "short_description": "meshLocationURL is empty",
         "probable_cause": "meshLocationURL cannot be empty to add an adapter",
         "suggested_remediation": "please provide the meshLocationURL"
+      }
+    ],
+    "ErrAddAndValidateExtraHeaderCode": [
+      {
+        "name": "ErrAddAndValidateExtraHeaderCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to add and validate extra header",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrAddonSubscriptionCode": [
@@ -1263,6 +2702,17 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrApplicationFileNameCode": [
+      {
+        "name": "ErrApplicationFileNameCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Name field is either not present or is not valid",
+        "short_description": "Invalid Applicationfile",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrApplyChangeCode": [
       {
         "name": "ErrApplyChangeCode",
@@ -1283,6 +2733,26 @@
         "short_description": "Error: name field is blank",
         "probable_cause": "",
         "suggested_remediation": "Provide a name for the test"
+      }
+    ],
+    "ErrClientConfigCode": [
+      {
+        "name": "ErrClientConfigCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to create client config",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      },
+      {
+        "name": "ErrClientConfigCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to create client set",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrControlPlaneSubscriptionCode": [
@@ -1318,6 +2788,28 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrConvertingResultToMapCode": [
+      {
+        "name": "ErrConvertingResultToMapCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to convert from the result to map",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrCopyCode": [
+      {
+        "name": "ErrCopyCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while copying",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrCreateDataCode": [
       {
         "name": "ErrCreateDataCode",
@@ -1347,6 +2839,105 @@
         "suggested_remediation": "Restart Meshery Server\nPlease check if Meshery server is accessible to the Database"
       }
     ],
+    "ErrDBConnectionCode": [
+      {
+        "name": "ErrDBConnectionCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Connection to DataBase does not exist",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBDeleteCode": [
+      {
+        "name": "ErrDBDeleteCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to delete config data for the user",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBLockCode": [
+      {
+        "name": "ErrDBLockCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to obtain write lock from bitcask store",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBOpenCode": [
+      {
+        "name": "ErrDBOpenCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to open the database",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBPutCode": [
+      {
+        "name": "ErrDBPutCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to Persist config data.",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBRLockCode": [
+      {
+        "name": "ErrDBRLockCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to obtain read lock from bitcask store",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDBReadCode": [
+      {
+        "name": "ErrDBReadCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to read data from bitcast store",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDataReadCode": [
+      {
+        "name": "ErrDataReadCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Eeror occurred while reading from the Reader",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDecodeBase64Code": [
+      {
+        "name": "ErrDecodeBase64Code",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while decoding base65 string",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrDecodingCode": [
       {
         "name": "ErrDecodingCode",
@@ -1354,6 +2945,39 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "Error decoding the : ",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDeleteCode": [
+      {
+        "name": "ErrDeleteCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to delete data from the Provider",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDetectServiceForDeploymentImageCode": [
+      {
+        "name": "ErrDetectServiceForDeploymentImageCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to detect service for deployment image",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrDetectServiceWithNameCode": [
+      {
+        "name": "ErrDetectServiceWithNameCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get services from the cluster with the name given in names parameter",
         "probable_cause": "",
         "suggested_remediation": ""
       }
@@ -1366,6 +2990,37 @@
         "long_description": "",
         "short_description": "Error encoding the : ",
         "probable_cause": "Unable to encode the : ",
+        "suggested_remediation": ""
+      },
+      {
+        "name": "ErrEncodingCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error encoding the object",
+        "probable_cause": "Unable to encode the : ",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrEncodingPEMCode": [
+      {
+        "name": "ErrEncodingPEMCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while encoding jwk to pem",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrErrNewDynamicClientGeneratorCode": [
+      {
+        "name": "ErrErrNewDynamicClientGeneratorCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to generate the dynamic client generator",
+        "probable_cause": "",
         "suggested_remediation": ""
       }
     ],
@@ -1402,6 +3057,50 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrFetchCode": [
+      {
+        "name": "ErrFetchCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to fetch data from the Provider",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrFetchKubernetesNodesCode": [
+      {
+        "name": "ErrFetchKubernetesNodesCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to fetch kubernetes nodes",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrFetchKubernetesVersionCode": [
+      {
+        "name": "ErrFetchKubernetesVersionCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to fetch kubernetes version",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrFetchNodesCode": [
+      {
+        "name": "ErrFetchNodesCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get the list of nodes",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrFetchSMIResultsCode": [
       {
         "name": "ErrFetchSMIResultsCode",
@@ -1409,6 +3108,28 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "unable to fetch SMI results",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrFilterFileNameCode": [
+      {
+        "name": "ErrFilterFileNameCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Name field is either not present or is not valid",
+        "short_description": "Invalid Filterfile",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrFolderStatCode": [
+      {
+        "name": "ErrFolderStatCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to find (os.stat) the folder",
         "probable_cause": "",
         "suggested_remediation": ""
       }
@@ -1424,6 +3145,39 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrGenerateUUIDCode": [
+      {
+        "name": "ErrGenerateUUIDCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to generate a new UUID",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGeneratingLoadTestCode": [
+      {
+        "name": "ErrGeneratingLoadTestCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to generate load test",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGetNamespaceDeploymentsCode": [
+      {
+        "name": "ErrGetNamespaceDeploymentsCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get deployments in the \nnamespace",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrGetResultCode": [
       {
         "name": "ErrGetResultCode",
@@ -1431,6 +3185,17 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "unable to get result",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGetTokenCode": [
+      {
+        "name": "ErrGetTokenCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while getting token from the Browser Cookie",
         "probable_cause": "",
         "suggested_remediation": ""
       }
@@ -1453,6 +3218,15 @@
         "short_description": "unable to get Prometheus boards",
         "probable_cause": "",
         "suggested_remediation": "Check if your Prometheus endpoint is correct\nConnect to Prometheus from the settings page in the UI"
+      },
+      {
+        "name": "ErrGrafanaBoardsCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get Grafana Boards",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrGrafanaClientCode": [
@@ -1477,6 +3251,50 @@
         "suggested_remediation": "Setup your Grafana Endpoint via the settings dashboard"
       }
     ],
+    "ErrGrafanaDashboardCode": [
+      {
+        "name": "ErrGrafanaDashboardCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error getting grafana dashboard from UID",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGrafanaDataCode": [
+      {
+        "name": "ErrGrafanaDataCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error getting data from Grafana API",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGrafanaDataSourceCode": [
+      {
+        "name": "ErrGrafanaDataSourceCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error getting Grafana Board's Datasource",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrGrafanaOrgCode": [
+      {
+        "name": "ErrGrafanaOrgCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Failed to get Org data from Grafana",
+        "probable_cause": "Invalid URL\nInvalid API-Key",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrGrafanaQueryCode": [
       {
         "name": "ErrGrafanaQueryCode",
@@ -1499,12 +3317,54 @@
         "suggested_remediation": "Check if your Grafana Endpoint is correct\nConnect to Grafana from the settings page in the UI"
       }
     ],
+    "ErrGrpcSupportCode": [
+      {
+        "name": "ErrGrpcSupportCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": " does not support gRPC load testing",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrInClusterConfigCode": [
+      {
+        "name": "ErrInClusterConfigCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to load in-cluster kubeconfig",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrInvalidCapabilityCode": [
+      {
+        "name": "ErrInvalidCapabilityCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "You dont have access to the capability",
+        "short_description": "Capablity is not supported by your Provider",
+        "probable_cause": "Not logged in to the vaild remote Provider",
+        "suggested_remediation": "Connect to the vaild remote Provider\nAsk the Provider Adim for access"
+      }
+    ],
     "ErrInvalidK8SConfigCode": [
       {
         "name": "ErrInvalidK8SConfigCode",
         "code": "",
         "severity": "Alert",
         "long_description": "Kubernetes config is not initialized with Meshery",
+        "short_description": "No valid kubernetes config found",
+        "probable_cause": "",
+        "suggested_remediation": "Upload your kubernetes config via the settings dashboard. If uploaded, wait for a minute for it to get initialized"
+      },
+      {
+        "name": "ErrInvalidK8SConfigCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
         "short_description": "No valid kubernetes config found",
         "probable_cause": "",
         "suggested_remediation": "Upload your kubernetes config via the settings dashboard. If uploaded, wait for a minute for it to get initialized"
@@ -1519,6 +3379,17 @@
         "short_description": "Invalid query, please check syntax",
         "probable_cause": "",
         "suggested_remediation": "Check the query parameters and syntax of the query being run"
+      }
+    ],
+    "ErrJWKsKeysCode": [
+      {
+        "name": "ErrJWKsKeysCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to fetch JWKs keys from the remote provider",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrKubeVersionCode": [
@@ -1563,6 +3434,28 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrLocalProviderSupportCode": [
+      {
+        "name": "ErrLocalProviderSupportCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Method not supported by local provider",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrMakeDirCode": [
+      {
+        "name": "ErrMakeDirCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to create directory/folder",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrMarshalCode": [
       {
         "name": "ErrMarshalCode",
@@ -1570,6 +3463,26 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "Unable to marshal the : ",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      },
+      {
+        "name": "ErrMarshalCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to marshal the object",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrMarshalPKIXCode": [
+      {
+        "name": "ErrMarshalPKIXCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while marshaling PKIX",
         "probable_cause": "",
         "suggested_remediation": ""
       }
@@ -1616,6 +3529,28 @@
         "suggested_remediation": "Check if meshery server is reachable from the browser"
       }
     ],
+    "ErrNewKubeClientCode": [
+      {
+        "name": "ErrNewKubeClientCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to create new kube client",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrNewKubeClientGeneratorCode": [
+      {
+        "name": "ErrNewKubeClientGeneratorCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to generate new kube dynamic client",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrNilClientCode": [
       {
         "name": "ErrNilClientCode",
@@ -1634,6 +3569,50 @@
         "short_description": "Kubernetes client not initialized",
         "probable_cause": "",
         "suggested_remediation": "Upload your kubernetes config via the settings dashboard. If uploaded, wait for a minute for it to get initialized"
+      }
+    ],
+    "ErrNilConfigDataCode": [
+      {
+        "name": "ErrNilConfigDataCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Given config data is nil",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrNilJWKsCode": [
+      {
+        "name": "ErrNilJWKsCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Value of JWKs is nil",
+        "short_description": "Invalid JWks",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrNilKeysCode": [
+      {
+        "name": "ErrNilKeysCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "JWK not found for the given KeyID",
+        "short_description": "Key not found",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrNilQueryCode": [
+      {
+        "name": "ErrNilQueryCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Query data passed is nil",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrNoExternalEndpointCode": [
@@ -1700,6 +3679,28 @@
         "suggested_remediation": "Check if meshery server is reachable from the browser"
       }
     ],
+    "ErrPageNumberCode": [
+      {
+        "name": "ErrPageNumberCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to prase the Page Numer",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrPageSizeCode": [
+      {
+        "name": "ErrPageSizeCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to prase the Page Size",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrPanicRecoveryCode": [
       {
         "name": "ErrPanicRecoveryCode",
@@ -1744,6 +3745,28 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrPatternFileNameCode": [
+      {
+        "name": "ErrPatternFileNameCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Name field is either not present or is not valid",
+        "short_description": "Invalid Patternfile",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrPerfIDCode": [
+      {
+        "name": "ErrPerfIDCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Invalid peformance profile ID",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrPluginLookupCode": [
       {
         "name": "ErrPluginLookupCode",
@@ -1777,6 +3800,28 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrPostCode": [
+      {
+        "name": "ErrPostCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to post data to the Provider",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrPraseUnverifiedCode": [
+      {
+        "name": "ErrPraseUnverifiedCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while prasing tokens (unverified)",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrPrometheusConfigCode": [
       {
         "name": "ErrPrometheusConfigCode",
@@ -1786,6 +3831,28 @@
         "short_description": "Prometheus endpoint not configured",
         "probable_cause": "",
         "suggested_remediation": "Setup your Prometheus Endpoint via the settings dashboard"
+      }
+    ],
+    "ErrPrometheusGetNodesCode": [
+      {
+        "name": "ErrPrometheusGetNodesCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Prometheus Client unable to get all nodes",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrPrometheusLabelSeriesCode": [
+      {
+        "name": "ErrPrometheusLabelSeriesCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get the label set series",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrPrometheusQueryCode": [
@@ -1799,6 +3866,17 @@
         "suggested_remediation": "Check if your Prometheus query is correct\nConnect to Prometheus and Grafana from the settings page in the UI"
       }
     ],
+    "ErrPrometheusQueryRangeCode": [
+      {
+        "name": "ErrPrometheusQueryRangeCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to fetch data for the query",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrPrometheusScanCode": [
       {
         "name": "ErrPrometheusScanCode",
@@ -1808,6 +3886,17 @@
         "short_description": "Unable to connect to prometheus",
         "probable_cause": "",
         "suggested_remediation": "Check if your Prometheus and Grafana Endpoint are correct\nConnect to Prometheus and Grafana from the settings page in the UI"
+      }
+    ],
+    "ErrPrometheusStaticBoardCode": [
+      {
+        "name": "ErrPrometheusStaticBoardCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unbale to get Static Boards",
+        "probable_cause": "",
+        "suggested_remediation": ""
       }
     ],
     "ErrPublishBrokerCode": [
@@ -1887,6 +3976,39 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrRestConfigFromKubeConfigCode": [
+      {
+        "name": "ErrRestConfigFromKubeConfigCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to create rest config from kube congif",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrResultDataCode": [
+      {
+        "name": "ErrResultDataCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "given result data is nil",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrResultIDCode": [
+      {
+        "name": "ErrResultIDCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Given resultID is nil",
+        "short_description": "Given resultID is not valid",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrRetrieveDataCode": [
       {
         "name": "ErrRetrieveDataCode",
@@ -1909,6 +4031,28 @@
         "suggested_remediation": ""
       }
     ],
+    "ErrRetrieveNamespacesListCode": [
+      {
+        "name": "ErrRetrieveNamespacesListCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to get the list of namespaces",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrRetrievePodListCode": [
+      {
+        "name": "ErrRetrievePodListCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to retrieve pod list",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrRetrieveUserTokenCode": [
       {
         "name": "ErrRetrieveUserTokenCode",
@@ -1916,6 +4060,50 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "Failed to get the user token",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrRunningNighthawkServerCode": [
+      {
+        "name": "ErrRunningNighthawkServerCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error while running nighthawk server",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrRunningTestCode": [
+      {
+        "name": "ErrRunningTestCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to run test",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrScanKubernetesCode": [
+      {
+        "name": "ErrScanKubernetesCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to scan kubernetes",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrStartingNighthawkServerCode": [
+      {
+        "name": "ErrStartingNighthawkServerCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to start the nighthawk server",
         "probable_cause": "",
         "suggested_remediation": ""
       }
@@ -1964,6 +4152,94 @@
         "suggested_remediation": "Check if Meshery Broker is reachable from Meshery Server\nCheck if Meshery Broker is up and running inside the configured cluster"
       }
     ],
+    "ErrTokenClaimsCode": [
+      {
+        "name": "ErrTokenClaimsCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while prasing claims",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTokenClientCheckCode": [
+      {
+        "name": "ErrTokenClientCheckCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while performing token check HTTP request",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTokenDecodeCode": [
+      {
+        "name": "ErrTokenDecodeCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while Decoding Token Data",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTokenExpiredCode": [
+      {
+        "name": "ErrTokenExpiredCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "Token is invalid, it has expired",
+        "short_description": "Token has expired",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTokenPraseCode": [
+      {
+        "name": "ErrTokenPraseCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while Prasing and validating the token",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTokenRefreshCode": [
+      {
+        "name": "ErrTokenRefreshCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error occurred while Refresing the token",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrTransformingDataCode": [
+      {
+        "name": "ErrTransformingDataCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Error while transforming data",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrUnableToPersistsResultCode": [
+      {
+        "name": "ErrUnableToPersistsResultCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "unable to persists the result data",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
     "ErrUnmarshalCode": [
       {
         "name": "ErrUnmarshalCode",
@@ -1971,6 +4247,35 @@
         "severity": "Alert",
         "long_description": "",
         "short_description": "Unable to unmarshal the : ",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      },
+      {
+        "name": "ErrUnmarshalCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to unmarshal the : ",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      },
+      {
+        "name": "ErrUnmarshalCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "Unable to unmarshal the object",
+        "probable_cause": "",
+        "suggested_remediation": ""
+      }
+    ],
+    "ErrUserIDCode": [
+      {
+        "name": "ErrUserIDCode",
+        "code": "",
+        "severity": "Alert",
+        "long_description": "",
+        "short_description": "User ID is empty",
         "probable_cause": "",
         "suggested_remediation": ""
       }
