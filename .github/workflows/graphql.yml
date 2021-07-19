@@ -15,6 +15,5 @@ jobs:
         bundler-cache: true
     - name: graphql-docs
       run: |
-        cd docs
         make build-docs
         bundle exec rake graphql:compile_docs
