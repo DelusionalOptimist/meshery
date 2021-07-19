@@ -16,6 +16,5 @@ jobs:
     - name: graphql-docs
       run: |
         cd docs
-        build-docs
+        make build-docs
         bundle exec rake graphql:compile_docs
-
