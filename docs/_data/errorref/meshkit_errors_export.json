@@ -524,15 +524,6 @@
         "short_description": "",
         "probable_cause": "",
         "suggested_remediation": ""
-      },
-      "11072": {
-        "name": "ErrNewCode",
-        "code": "11072",
-        "severity": "Alert",
-        "long_description": "",
-        "short_description": "Subscription failed",
-        "probable_cause": "",
-        "suggested_remediation": ""
       }
     }
   }
