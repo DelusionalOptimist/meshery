@@ -31,6 +31,7 @@ jobs:
         uses: actions/setup-go@v1
         with:
           go-version: ${{ secrets.GO_VERSION }}
+
       - name: Run errors utility
         run: go run github.com/layer5io/meshkit/cmd/errorutil -d . update
   golangci:
