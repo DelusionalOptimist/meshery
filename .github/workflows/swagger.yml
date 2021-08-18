@@ -5,18 +5,14 @@ on:
       - "master"
     paths:
       - "handlers/**"
-  pull_request:
-    paths:
-      - "handlers/**"
 jobs:
   swaggerci:
-    if: github.repository == 'meshery/meshery'
     name: swagger-docs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          token: ${{ secrets.RELEASEDRAFTER_PAT }}
           ref: "master"
       - name: Setup go-swagger
         uses: minchao/setup-go-swagger@v1
@@ -29,7 +25,7 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: docs helpers/
+          file_pattern: docs/ helpers/
           commit_user_name: l5io
           commit_user_email: ci@layer5.io
           commit_author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
