@@ -9,7 +9,7 @@ import (
 )
 
 // swagger:route GET /api/user/login UserAPI idGetUserLogin
-// Handlers GET request for User login
+// Handlers GET request for Usr login
 //
 // user for auth or issues session
 // responses:
