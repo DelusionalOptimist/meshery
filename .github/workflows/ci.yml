@@ -272,15 +272,15 @@ jobs:
           modified:
             - added|modified: "handlers/**"
     - name: Setup go-swagger
-      if: steps.filter.outputs.modified == 'true'
+      if: steps.changes.outputs.modified == 'true'
       uses: minchao/setup-go-swagger@v1
       with:
         version: v0.26.1
     - name: swagger-spec
-      if: steps.filter.outputs.modified == 'true'
+      if: steps.changes.outputs.modified == 'true'
       run: swagger generate spec -o ./helpers/swagger.yaml --scan-models
     - name: swagger-docs
-      if: steps.filter.outputs.modified == 'true'
+      if: steps.changes.outputs.modified == 'true'
       run: swagger generate spec -o ./docs/_data/swagger.yml --scan-models && swagger flatten ./docs/_data/swagger.yml -o ./docs/_data/swagger.yml --with-expand --format=yaml
 
   # validate graphQL schema
