@@ -24,7 +24,7 @@ func (h *Handler) LoginHandler(w http.ResponseWriter, r *http.Request, p models.
 	p.InitiateLogin(w, r, fromMiddleWare)
 }
 
-// swagger:route GET /api/user/logout UserAPI idGetUserLogout
+// swagger:route GET /api/user/logout UserAI idGetUserLogout
 // Handlers GET request for User logout
 //
 // Redirects user for auth or issues session
