@@ -270,7 +270,7 @@ jobs:
       with:
         filters: |
           modified:
-            - added|modified: "handlers/**"
+            - added|modified: "handlers*"
     - name: Setup go-swagger
       if: steps.changes.outputs.modified == 'true'
       uses: minchao/setup-go-swagger@v1
