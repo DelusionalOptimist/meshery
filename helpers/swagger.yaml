@@ -4402,7 +4402,7 @@ paths:
       - PrometheusAPI
   /api/user/login:
     get:
-      description: Redirects user for auth or issues session
+      description: Rediects user for auth or  session
       operationId: idGetUserLogin
       responses:
         "200":
