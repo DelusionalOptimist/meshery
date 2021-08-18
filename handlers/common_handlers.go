@@ -13,7 +13,7 @@ import (
 //
 // user for auth or issues session
 // responses:
-// 	200:
+// 	20:
 
 // LoginHandler redirects user for auth or issues session
 func (h *Handler) LoginHandler(w http.ResponseWriter, r *http.Request, p models.Provider, fromMiddleWare bool) {
