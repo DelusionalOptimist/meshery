@@ -11,7 +11,7 @@ import (
 // swagger:route GET /api/user/login UserAPI idGetUserLogin
 // Handlers GET request for User login
 //
-// Redirects user for auth or issues session
+// user for auth or issues session
 // responses:
 // 	200:
 
