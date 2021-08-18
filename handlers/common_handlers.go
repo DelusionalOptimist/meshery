@@ -25,7 +25,7 @@ func (h *Handler) LoginHandler(w http.ResponseWriter, r *http.Request, p models.
 }
 
 // swagger:route GET /api/user/logout UserAPI idGetUserLogout
-// Handlers GET request for User logout
+// Handlers GET request forser logout
 //
 // Redirects user for auth or issues session
 // responses:
