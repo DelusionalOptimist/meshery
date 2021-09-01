@@ -30,4 +30,4 @@ template: |
 autolabeler:
   - label: 'area/docs'
     branch:
-      - '/docs/'
+      - 'docs/'
