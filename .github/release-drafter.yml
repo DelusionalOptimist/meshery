@@ -29,5 +29,7 @@ template: |
   $CONTRIBUTORS
 autolabeler:
   - label: 'area/docs'
+    files:
+      - 'docs/'
     branch:
       - 'docs/'
