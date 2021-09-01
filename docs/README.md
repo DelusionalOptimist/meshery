@@ -3,7 +3,7 @@
 ![assets/img/docs-screenshot.png](assets/img/docs-screenshot.png)
 *Check out the [Meshery Docs](https://docs.meshery.io/)!*
 
-## Contributing to The Meshery Documentation
+## Contributing to the Meshery Documentation
 
 Before contributing, please review the [Documentation Contribution Flow](https://github.com/meshery/meshery/blob/master/CONTRIBUTING.md#documentation-contribution-flow). In the following steps you will set up your development environment, fork and clone the repository, run the site locally, and finally commit, sign-off, and push any changes made for review. 
 
