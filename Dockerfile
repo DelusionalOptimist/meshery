@@ -42,6 +42,10 @@ COPY --from=ui /out /app/ui/out
 COPY --from=provider-ui /out /app/provider-ui/out
 COPY --from=wrk2 /wrk2 /app/cmd/wrk2
 COPY --from=wrk2 /wrk2/wrk /usr/local/bin
+RUN mkdir -p /home/appuser/.meshery/seed_content/patterns
+COPY ./service-mesh-patterns/samples /home/appuser/.meshery/seed_content/patterns
+RUN mkdir -p /home/appuser/.meshery/seed_content/filters/binaries
+COPY ./wasm-filters /home/appuser/.meshery/seed_content/filters/binaries
 #COPY --from=nighthawk /nighthawk-go/apinighthawk/bin /usr/local/bin
 RUN curl -Lo nighthawk_service-ubuntu-amd64-v1.0.1.tar.gz https://github.com/layer5io/getnighthawk/releases/download/v1.0.1/nighthawk_service-ubuntu-amd64-v1.0.1.tar.gz \
     && tar -xzvf nighthawk_service-ubuntu-amd64-v1.0.1.tar.gz \
