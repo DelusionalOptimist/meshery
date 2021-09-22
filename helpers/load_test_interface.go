@@ -16,10 +16,12 @@ import (
 	"github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/layer5io/gowrk2/api"
 	"github.com/layer5io/meshery/models"
+	"github.com/layer5io/meshkit/utils"
 	mesherykube "github.com/layer5io/meshkit/utils/kubernetes"
 	nighthawk_client "github.com/layer5io/nighthawk-go/pkg/client"
 	nighthawk_proto "github.com/layer5io/nighthawk-go/pkg/proto"
 	"github.com/sirupsen/logrus"
+	"github.com/spf13/viper"
 	"google.golang.org/protobuf/types/known/durationpb"
 
 	v3 "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
@@ -171,7 +173,7 @@ func WRK2LoadTest(opts *models.LoadTestOptions) (map[string]interface{}, *period
 }
 
 // NighthawkLoadTest is the actual code which invokes nighthawk to run the load test
-func NighthawkLoadTest(opts *models.LoadTestOptions, ctx context.Context, kubeClient *mesherykube.Client) (map[string]interface{}, *periodic.RunnerResults, error) {
+func NighthawkLoadTest(ctx context.Context, opts *models.LoadTestOptions, kubeClient *mesherykube.Client) (map[string]interface{}, *periodic.RunnerResults, error) {
 
 	qps := opts.HTTPQPS
 
@@ -262,15 +264,22 @@ func NighthawkLoadTest(opts *models.LoadTestOptions, ctx context.Context, kubeCl
 		return nil, nil, ErrGrpcSupport(err, "Nighthawk")
 	}
 
-	nighthawkServiceEndpoint, err := mesherykube.GetServiceEndpoint(ctx, kubeClient.KubeClient, &mesherykube.ServiceOptions{
-		Name:         "meshery-perf",
-		Namespace:    "meshery",
-		PortSelector: "grpc",
-		APIServerURL: kubeClient.RestConfig.Host,
-	})
-	if err != nil {
-		return nil, nil, ErrRunningTest(err)
+	// check if running in cluster or docker
+	var nighthawkServiceEndpoint *utils.Endpoint
+	if isInCluster := viper.GetString("KUBERNETES_SERVICE_HOST"); isInCluster != "" {
+		nighthawkServiceEndpoint, err = mesherykube.GetServiceEndpoint(ctx, kubeClient.KubeClient, &mesherykube.ServiceOptions{
+			Name:         "meshery-perf",
+			Namespace:    "meshery",
+			PortSelector: "grpc",
+			APIServerURL: kubeClient.RestConfig.Host,
+		})
+		if err != nil {
+			return nil, nil, ErrRunningTest(err)
+		}
+	} else {
+		nighthawkServiceEndpoint.Internal.Address = "localhost"
 	}
+
 
 	fmt.Println(string(nighthawkServiceEndpoint.Internal.Address))
 
