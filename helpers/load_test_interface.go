@@ -4,10 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"net/url"
 	"os"
-	"path"
 	"strings"
 	"sync"
 	"time"
@@ -18,7 +16,6 @@ import (
 	"github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/layer5io/gowrk2/api"
 	"github.com/layer5io/meshery/models"
-	"github.com/layer5io/meshkit/utils"
 	mesherykube "github.com/layer5io/meshkit/utils/kubernetes"
 	nighthawk_client "github.com/layer5io/nighthawk-go/pkg/client"
 	nighthawk_proto "github.com/layer5io/nighthawk-go/pkg/proto"
@@ -173,76 +170,8 @@ func WRK2LoadTest(opts *models.LoadTestOptions) (map[string]interface{}, *period
 	return resultsMap, result, nil
 }
 
-//func startNighthawkServer(timeout int64) error {
-//	nighthawkStatus.Lock()
-//	defer nighthawkStatus.Unlock()
-//	command := "./nighthawk_service"
-//	transformCommand := "./nighthawk_output_transform"
-//	cmd := exec.Command(command)
-//	if !nighthawkRunning {
-//		err := cmd.Start()
-//		if err != nil {
-//			nighthawkStatus.Unlock()
-//			return ErrStartingNighthawkServer(err)
-//		}
-//		nighthawkRunning = true
-//	}
-//	go func() {
-//		err := cmd.Wait()
-//		if err != nil {
-//			nighthawkRunning = false
-//			return
-//		}
-//	}()
-//
-//	_, err := os.Stat(transformCommand)
-//	if err != nil {
-//		nighthawkStatus.Unlock()
-//		return ErrStartingNighthawkServer(err)
-//	}
-//
-//	for timeout != 0 {
-//		if utils.TcpCheck(&utils.HostPort{
-//			Address: "0.0.0.0",
-//			Port:    8443,
-//		}, nil) {
-//			return nil
-//		}
-//		timeout--
-//		time.Sleep(1 * time.Second)
-//	}
-//	return ErrStartingNighthawkServer(err)
-//}
-
-// Deploy Nighthawk in-cluster
-// TODO: Deploy nighthawk in docker
-func deployNighthawk(client *mesherykube.Client, isDel bool) error {
-	// read nighthawk manifest from ~/.meshery/manifests
-	manifestFile := path.Join(utils.GetHome(), ".meshery", "manifests", "getnighthawk-deployment.yaml")
-	content, err := ioutil.ReadFile(manifestFile)
-	if err != nil {
-		return err
-	}
-
-	if err := client.ApplyManifest([]byte(content), mesherykube.ApplyOptions{
-		Namespace: "meshery",
-		Update: true,
-		Delete: isDel,
-	}); err != nil {
-		return err
-	}
-	time.Sleep(time.Second * 20)
-
-	return nil
-}
-
 // NighthawkLoadTest is the actual code which invokes nighthawk to run the load test
 func NighthawkLoadTest(opts *models.LoadTestOptions, ctx context.Context, kubeClient *mesherykube.Client) (map[string]interface{}, *periodic.RunnerResults, error) {
-	//err := startNighthawkServer(int64(opts.Duration))
-	err := deployNighthawk(kubeClient, false)
-	if err != nil {
-		return nil, nil, ErrRunningNighthawkServer(err)
-	}
 
 	qps := opts.HTTPQPS
 
@@ -334,7 +263,7 @@ func NighthawkLoadTest(opts *models.LoadTestOptions, ctx context.Context, kubeCl
 	}
 
 	nighthawkServiceEndpoint, err := mesherykube.GetServiceEndpoint(ctx, kubeClient.KubeClient, &mesherykube.ServiceOptions{
-		Name:         "getnighthawk",
+		Name:         "meshery-perf",
 		Namespace:    "meshery",
 		PortSelector: "grpc",
 		APIServerURL: kubeClient.RestConfig.Host,
