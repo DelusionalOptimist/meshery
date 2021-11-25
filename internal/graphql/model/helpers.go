@@ -15,10 +15,24 @@ import (
 	mesherykube "github.com/layer5io/meshkit/utils/kubernetes"
 	meshsyncmodel "github.com/layer5io/meshsync/pkg/model"
 	"github.com/spf13/viper"
+
+	"github.com/layer5io/meshery-operator/api/v1alpha1"
+	"github.com/pkg/errors"
+	apiextension "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime/schema"
+	controllerConfig "sigs.k8s.io/controller-runtime/pkg/client/config"
 )
 
 const (
 	chartRepo = "https://meshery.github.io/meshery.io/charts"
+	crdsURL = "https://raw.githubusercontent.com/meshery/meshery/master/install/kubernetes/helm/meshery/crds/crds.yaml"
+	brokerResourceName   = "brokers"
+	brokerInstanceName   = "meshery-broker"
+	meshsyncResourceName = "meshsyncs"
+	meshsyncInstanceName = "meshery-meshsync"
+	brokderCRDName       = "brokers.meshery.layer5.io"
+	meshsyncCRDName      = "meshsyncs.meshery.layer5.io"
 )
 
 var (
@@ -151,6 +165,24 @@ func installUsingHelm(client *mesherykube.Client, delete bool, adapterTracker mo
 
 	overrides := SetOverrideValues(delete, adapterTracker)
 
+	if delete {
+		// Delete the CR instances for brokers and meshsyncs
+		// this needs to be executed before deleting the helm release, or the CR instances cannot be found for some reason
+		if err := DeleteCR(brokerResourceName, brokerInstanceName, client); err != nil {
+			return ErrApplyHelmChart(err)
+		}
+		if err := DeleteCR(meshsyncResourceName, meshsyncInstanceName, client); err != nil {
+			return ErrApplyHelmChart(err)
+		}
+	} else {
+		// this installs CRDs if they're not present
+		err := applyYaml(client, delete, crdsURL)
+		if err != nil {
+			return ErrApplyHelmChart(err)
+		}
+	}
+
+
 	err := client.ApplyHelmChart(mesherykube.ApplyHelmChartConfig{
 		Namespace: "meshery",
 		ChartLocation: mesherykube.HelmChartLocation{
@@ -166,6 +198,18 @@ func installUsingHelm(client *mesherykube.Client, delete bool, adapterTracker mo
 	})
 	if err != nil {
 		return ErrApplyHelmChart(err)
+	}
+
+	if delete {
+		// Delete the CRDs for brokers and meshsyncs
+		// These need to be deleted after deleting the chart
+		if err = DeleteCRD(brokderCRDName); err != nil {
+			return ErrApplyHelmChart(err)
+		}
+
+		if err = DeleteCRD(meshsyncCRDName); err != nil {
+			return ErrApplyHelmChart(err)
+		}
 	}
 
 	return nil
@@ -238,4 +282,23 @@ func SetOverrideValues(delete bool, adapterTracker models.AdaptersTrackerInterfa
 	}
 
 	return overrideValues
+}
+
+// DeleteCRs delete the specified CR instance in the clusters
+func DeleteCR(resourceName, instanceName string, client *mesherykube.Client) error {
+	return client.DynamicKubeClient.Resource(schema.GroupVersionResource{
+		Group:    v1alpha1.GroupVersion.Group,
+		Version:  v1alpha1.GroupVersion.Version,
+		Resource: resourceName,
+	}).Namespace("meshery").Delete(context.TODO(), instanceName, metav1.DeleteOptions{})
+}
+
+// DeleteCRs delete the specified CRD in the clusters
+func DeleteCRD(name string) error {
+	cfg := controllerConfig.GetConfigOrDie()
+	client, err := apiextension.NewForConfig(cfg)
+	if err != nil {
+		return errors.Wrap(err, "cannot invoke delete CRDs")
+	}
+	return client.ApiextensionsV1().CustomResourceDefinitions().Delete(context.TODO(), name, metav1.DeleteOptions{})
 }
